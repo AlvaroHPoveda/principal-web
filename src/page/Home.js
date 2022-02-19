@@ -1,10 +1,10 @@
 import React from "react";
+import '../styles/home.css'
 
 const Home = () => {
   return (
     <div>
-      <h1>Inicio</h1>
-      <p>esto lo escribio Gaston</p>
+      <h1>Inicio</h1>    
     </div>
   );
 };
