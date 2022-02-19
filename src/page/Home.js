@@ -4,7 +4,7 @@ const Home = () => {
   return (
     <div>
       <h1>Inicio</h1>
-      <p>esto lo escribio Poveda</p>
+      <p>esto lo escribio Gaston</p>
     </div>
   );
 };
