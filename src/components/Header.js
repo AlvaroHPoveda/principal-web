@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {faBurger} from "@fortawesome/free-solid-svg-icons";
+import {faBurger, faXmarkCircle} from "@fortawesome/free-solid-svg-icons";
 import "../styles/header.css";
 
 const Header = () => {
@@ -30,6 +30,11 @@ const Header = () => {
             <li>
               {" "}
               <Link to="/tecnology" className="link">Tecnología</Link>
+            </li>
+            <li>
+              {" "}
+              <input type="checkbox" id="menu" />
+          <label htmlFor="menu"><FontAwesomeIcon icon={faXmarkCircle} /></label>
             </li>
           </ul>
         </nav>       
