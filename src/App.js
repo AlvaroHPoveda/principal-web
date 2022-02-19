@@ -1,6 +1,6 @@
 import "./App.css";
 import { HashRouter, Route, Routes } from "react-router-dom";
-import { Home, AboutUs, Clothing, Jewelry, Tecnology } from "./page";
+import { Home, AboutUs, Boutique, Jewelry, Tecnology } from "./page";
 import { Header } from "./components";
 
 function App() {
@@ -11,7 +11,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/aboutus" element={<AboutUs />} />
-          <Route path="/clothing" element={<Clothing />} />
+          <Route path="/clothing" element={<Boutique />} />
           <Route path="/jewerly" element={<Jewelry />} />
           <Route path="/tecnology" element={<Tecnology />} />
         </Routes>
