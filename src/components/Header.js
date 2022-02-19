@@ -6,8 +6,11 @@ const Header = () => {
             <header>
                 <nav>
                     <ul>
-                        <li><Link to="/">Home</Link></li>
-                        <li> <Link to="/aboutus">About us</Link></li>
+                        <li><Link to="/">Inicio</Link></li>
+                        <li> <Link to="/aboutus">Sobre nosotros</Link></li>
+                        <li> <Link to="/clothing">Boutique</Link></li>
+                        <li> <Link to="/jewerly">Joyería</Link></li>
+                        <li> <Link to="/tecnology">Tecnología</Link></li>
                     </ul>
                 </nav>
             </header>
