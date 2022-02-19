@@ -1,31 +1,20 @@
-import './App.css';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import Home from './page/Home';
-import Header from './components/Header';
-import AboutUs from './page/AboutUs';
-import Clothing from './page/Clothing';
-import Jewerly from './page/Jewelry';
-import Tecnology from './page/Tecnology';
-
+import "./App.css";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { Home, Header, AboutUs, Clothing, Jewelry, Tecnology } from "./page";
 
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
         <Header />
-        
         <Routes>
-          <Route path="/" element={<Home />}/>
-          <Route path="/aboutus" element={<AboutUs />}/>
-          <Route path="/clothing" element={<Clothing />}/>
-          <Route path="/jewerly" element={<Jewerly />}/>
-          <Route path="/tecnology" element={<Tecnology />}/>
-          
-
+          <Route path="/" element={<Home />} />
+          <Route path="/aboutus" element={<AboutUs />} />
+          <Route path="/clothing" element={<Clothing />} />
+          <Route path="/jewerly" element={<Jewelry />} />
+          <Route path="/tecnology" element={<Tecnology />} />
         </Routes>
-
       </BrowserRouter>
-
     </div>
   );
 }
