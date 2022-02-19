@@ -1,8 +1,8 @@
 import './App.css';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import Home from './routes/Home';
+import Home from './page/Home';
 import Header from './components/Header';
-import AboutUs from './routes/AboutUs';
+import AboutUs from './page/AboutUs';
 import Clothing from './page/Clothing';
 import Jewerly from './page/Jewelry';
 import Tecnology from './page/Tecnology';
