@@ -1,11 +1,11 @@
 import "./App.css";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { HashRouter, Route, Routes } from "react-router-dom";
 import { Home, Header, AboutUs, Clothing, Jewelry, Tecnology } from "./page";
 
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
+      <HashRouter>
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
@@ -14,7 +14,7 @@ function App() {
           <Route path="/jewerly" element={<Jewelry />} />
           <Route path="/tecnology" element={<Tecnology />} />
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
     </div>
   );
 }
