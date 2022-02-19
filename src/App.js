@@ -1,6 +1,7 @@
 import "./App.css";
 import { HashRouter, Route, Routes } from "react-router-dom";
-import { Home, Header, AboutUs, Clothing, Jewelry, Tecnology } from "./page";
+import { Home, AboutUs, Clothing, Jewelry, Tecnology } from "./page";
+import { Header } from "./components";
 
 function App() {
   return (
