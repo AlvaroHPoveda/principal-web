@@ -13,7 +13,7 @@ const Layout = () => {
         <label htmlFor="menu">
           <FontAwesomeIcon icon={faBurger} />
         </label>
-        <ul>
+        <ul className="ulLayout">
           <li>
             <Link to="/" className="link">
               Inicio

@@ -10,8 +10,9 @@
   color: #000;
 }
 
-ul {
+.ulLayout {
   display: none;
+  position: absolute;
 }
 
 input:checked ~ ul {
@@ -33,6 +34,10 @@ label {
   font-weight: bold;
   text-align: center;
   user-select: none;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
 }
 
 /* Estilo del boton cuando se pasa el mouse por encima*/
@@ -45,13 +50,13 @@ input:checked ~ label {
   background: lightgrey;
 }
 
-ul {
+.ulLayout {
   margin-top: 0;
   padding: 0;
   width: 200px;
 }
 
-li {
+.ulLayout li {
   display: block;
   background: lightgrey;
   margin: 0;
@@ -61,6 +66,6 @@ li {
 }
 
 /*Estilo cuando el mouse pasa encima de cada link del menu*/
-li:hover {
+.ulLayout li:hover {
   filter: brightness(110%);
 }

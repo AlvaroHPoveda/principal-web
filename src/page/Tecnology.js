@@ -16,7 +16,7 @@ const Tecnology = () => {
             </h2>
           </li>
         ))}
-      </ul>      
+      </ul>       
     </main>
   );
 };
