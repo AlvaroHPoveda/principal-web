@@ -1,7 +1,7 @@
-let users = [
+let productsTecnology = [
   {
     id: 1,
-    name: "Leanne Graham",
+    name: "Monitor",
     username: "Bret",
     email: "Sincere@april.biz",
     phone: "1-770-736-8031 x56442",
@@ -9,7 +9,7 @@ let users = [
   },
   {
     id: 2,
-    name: "Ervin Howell",
+    name: "Video Juego",
     username: "Antonette",
     email: "Shanna@melissa.tv",
     phone: "010-692-6593 x09125",
@@ -17,7 +17,7 @@ let users = [
   },
   {
     id: 3,
-    name: "Clementine Bauch",
+    name: "Equipo de sonido",
     username: "Samantha",
     email: "Nathan@yesenia.net",
     phone: "1-463-123-4447",
@@ -25,7 +25,7 @@ let users = [
   },
   {
     id: 4,
-    name: "Patricia Lebsack",
+    name: "MP3",
     username: "Karianne",
     email: "Julianne.OConner@kory.org",
     phone: "493-170-9623 x156",
@@ -33,7 +33,7 @@ let users = [
   },
   {
     id: 5,
-    name: "Chelsey Dietrich",
+    name: "USB",
     username: "Kamren",
     email: "Lucio_Hettinger@annie.ca",
     phone: "(254)954-1289",
@@ -41,7 +41,7 @@ let users = [
   },
   {
     id: 6,
-    name: "Mrs. Dennis Schulist",
+    name: "Disco Duro",
     username: "Leopoldo_Corkery",
     email: "Karley_Dach@jasper.info",
     phone: "1-477-935-8478 x6430",
@@ -49,7 +49,7 @@ let users = [
   },
   {
     id: 7,
-    name: "Kurtis Weissnat",
+    name: "Radio",
     username: "Elwyn.Skiles",
     email: "Telly.Hoeger@billy.biz",
     phone: "210.067.6132",
@@ -57,7 +57,7 @@ let users = [
   },
   {
     id: 8,
-    name: "Nicholas Runolfsdottir V",
+    name: "Portatil",
     username: "Maxime_Nienow",
     email: "Sherwood@rosamond.me",
     phone: "586.493.6943 x140",
@@ -65,7 +65,7 @@ let users = [
   },
   {
     id: 9,
-    name: "Glenna Reichert",
+    name: "Audifonos",
     username: "Delphine",
     email: "Chaim_McDermott@dana.io",
     phone: "(775)976-6794 x41206",
@@ -73,7 +73,7 @@ let users = [
   },
   {
     id: 10,
-    name: "Clementina DuBuque",
+    name: "Tablet",
     username: "Moriah.Stanton",
     email: "Rey.Padberg@karina.biz",
     phone: "024-648-3804",
@@ -81,14 +81,14 @@ let users = [
   },
 ];
 
-export function getAllUsers() {
-  return users;
+export function getAllProductsTecnology() {
+  return productsTecnology;
 }
 
-export function getUser(id) {
-  return users.find((user) => user.id === id);
+export function getProductTecnology(id) {
+  return productsTecnology.find((ProductTecnology) => ProductTecnology.id === id);
 }
 
-export function deleteUser(id) {
-  users = users.filter((user) => user.id !== id);
+export function deleteProductTecnology(id) {
+  productsTecnology = productsTecnology.filter((ProductTecnology) => ProductTecnology.id !== id);
 }

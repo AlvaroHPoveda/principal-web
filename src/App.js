@@ -14,6 +14,7 @@ function App() {
             <Route path="clothing" element={<Boutique />} />
             <Route path="jewerly" element={<Jewelry />} />
             <Route path="tecnology" element={<Tecnology />} />         
+            <Route path="tecnology/:userid" element={<Tecnology />} />         
             <Route path="*" element={<Navigate replace to='/' />} /> 
           </Route>         
         </Routes>

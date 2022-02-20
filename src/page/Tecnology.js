@@ -1,18 +1,18 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { getAllUsers } from "../utils/users";
+import { getAllProductsTecnology } from "../utils/dataTecnology";
 import "../styles/tecnology.css"
 
 const Tecnology = () => {
-  const users = getAllUsers();
+  const productsTecnology = getAllProductsTecnology();
   return (
     <main>
       <h1>Tecnologia</h1>
       <ul>
-        {users.map((user) => (
-          <li key={user.id}>            
+        {productsTecnology.map((productTecnology) => (
+          <li key={productTecnology.id}>            
             <h2>              
-              <Link to={"/tecnology/" + user.id}>{user.name}</Link>             
+              <Link to={"/tecnology/" + productTecnology.id}>{productTecnology.name}</Link>             
             </h2>
           </li>
         ))}
