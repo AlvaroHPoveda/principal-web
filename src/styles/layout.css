@@ -14,12 +14,10 @@
   display: none;
   position: absolute;
 }
-
-input:checked ~ ul {
+.inputLayout:checked ~ ul {
   display: block;
 }
-
-input {
+.inputLayout {
   display: none;
 }
 
@@ -46,7 +44,7 @@ label:hover {
 }
 
 /* Estilo del boton cuando el menú está expandido*/
-input:checked ~ label {
+.inputLayout:checked ~ label {
   background: lightgrey;
 }
 

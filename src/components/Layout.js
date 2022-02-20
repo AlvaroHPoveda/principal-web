@@ -9,7 +9,7 @@ const Layout = () => {
   return (
     <main>
       <nav>
-        <input type="checkbox" id="menu" />
+        <input className="inputLayout" type="checkbox" id="menu" />
         <label htmlFor="menu">
           <FontAwesomeIcon icon={faBurger} />
         </label>
@@ -45,7 +45,7 @@ const Layout = () => {
           </li>
           <li>
             {" "}
-            <input type="checkbox" id="menu" />
+            <input className="inputLayout" type="checkbox" id="menu" />
             <label htmlFor="menu">
               <FontAwesomeIcon icon={faXmarkCircle} />
             </label>
@@ -54,7 +54,7 @@ const Layout = () => {
       </nav>
       <section>
         <Outlet />
-        <Footer/>
+        <Footer />
       </section>
     </main>
   );

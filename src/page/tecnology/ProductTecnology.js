@@ -15,7 +15,7 @@ const ProductTecnology = () => {
 
   const handleDelete = () => {
     deleteProductTecnology(productTecnology.id);
-    navigate("/tecnology");
+    navigate("/tecnology", { replace: true });
   };
 
   return (
