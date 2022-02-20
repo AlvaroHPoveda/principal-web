@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { getAllProductsTecnology } from "../utils/dataTecnology";
-import "../styles/tecnology.css"
+import { getAllProductsTecnology } from "../../utils/dataTecnology";
+import "../../styles/tecnology.css"
 
 const Tecnology = () => {
   const productsTecnology = getAllProductsTecnology();
