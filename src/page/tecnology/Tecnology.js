@@ -6,6 +6,7 @@ import "../../styles/tecnology.css";
 const Tecnology = () => {
   const [searchParams, setSearchParams] = useSearchParams();
   const productsTecnology = getAllProductsTecnology();
+  const filter = searchParams.get("filter") ?? ""
 
   const handleFilter = (e) => {
     setSearchParams({ filter: e.target.value });
@@ -13,9 +14,14 @@ const Tecnology = () => {
   return (
     <main>
       <h1>Tecnologia</h1>
-      <input onChange={handleFilter} type="text" placeholder="filtro" />
+      <input value={filter} onChange={handleFilter} type="text" placeholder="filtro" />
       <ul>
-        {productsTecnology.map((productTecnology) => (
+        {productsTecnology.filter(productTecnology => {
+          if(!filter) return true;
+
+          const name = productTecnology.name.toLowerCase()
+          return name.includes(filter.toLocaleLowerCase())
+        }).map((productTecnology) => (
           <li key={productTecnology.id}>
             <Link to={productTecnology.id.toString()}>
               {productTecnology.name}
