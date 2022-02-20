@@ -86,9 +86,13 @@ export function getAllProductsTecnology() {
 }
 
 export function getProductTecnology(id) {
-  return productsTecnology.find((ProductTecnology) => ProductTecnology.id === id);
+  return productsTecnology.find(
+    (ProductTecnology) => ProductTecnology.id === id
+  );
 }
 
 export function deleteProductTecnology(id) {
-  productsTecnology = productsTecnology.filter((ProductTecnology) => ProductTecnology.id !== id);
+  productsTecnology = productsTecnology.filter(
+    (ProductTecnology) => ProductTecnology.id !== id
+  );
 }

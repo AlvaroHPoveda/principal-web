@@ -1,11 +1,37 @@
-import React from 'react';
+import React from "react";
+import { useNavigate, useParams } from "react-router-dom";
+import {
+  deleteProductTecnology,
+  getProductTecnology,
+} from "../../utils/dataTecnology";
 
 const ProductTecnology = () => {
-    return (
-        <div>
-            
-        </div>
-    );
+  const params = useParams();
+  const navigate = useNavigate();
+
+  const productTecnology = getProductTecnology(
+    parseInt(params.productTecnologyid)
+  );
+
+  const handleDelete = () => {
+    deleteProductTecnology(productTecnology.id);
+    navigate("/tecnology");
+  };
+
+  return (
+    <div>
+      <hr />
+      {productTecnology.name}
+      <div>
+        <strong>Phone: </strong> {productTecnology.phone}
+      </div>
+      <div>
+        <strong>Website: </strong> {productTecnology.website}
+      </div>
+      <br />
+      <button onClick={handleDelete}>Delete</button>
+    </div>
+  );
 };
 
 export default ProductTecnology;

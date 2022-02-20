@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { getAllProductsTecnology } from "../../utils/dataTecnology";
-import "../../styles/tecnology.css"
+import "../../styles/tecnology.css";
 
 const Tecnology = () => {
   const productsTecnology = getAllProductsTecnology();
@@ -10,13 +10,13 @@ const Tecnology = () => {
       <h1>Tecnologia</h1>
       <ul>
         {productsTecnology.map((productTecnology) => (
-          <li key={productTecnology.id}>            
-            <h2>              
-              <Link to={"/tecnology/" + productTecnology.id}>{productTecnology.name}</Link>             
-            </h2>
+          <li key={productTecnology.id}>
+            <Link to={productTecnology.id.toString()}>
+              {productTecnology.name}
+            </Link>
           </li>
         ))}
-      </ul>       
+      </ul>
     </main>
   );
 };
