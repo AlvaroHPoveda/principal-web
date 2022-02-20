@@ -3,6 +3,7 @@ import { Link, Outlet } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBurger, faXmarkCircle } from "@fortawesome/free-solid-svg-icons";
 import "../styles/layout.css";
+import { Footer } from ".";
 
 const Layout = () => {
   return (
@@ -53,6 +54,7 @@ const Layout = () => {
       </nav>
       <section>
         <Outlet />
+        <Footer/>
       </section>
     </main>
   );
