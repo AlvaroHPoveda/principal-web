@@ -1,7 +1,4 @@
-import React, { useState } from "react";
 import { Link, Outlet } from "react-router-dom";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBurger, faXmarkCircle } from "@fortawesome/free-solid-svg-icons";
 import "../styles/layout.css";
 import { Footer } from ".";
 
@@ -26,8 +23,8 @@ const Layout = () => {
                 Sobre nosotros
               </Link>
             </li>
-            <div>             
-              <strong>Proyectos</strong> 
+            <div>
+              <strong>Proyectos</strong>
               <li className="menu-lateral__item">
                 <Link to="/clothing" className="link">
                   Boutique
