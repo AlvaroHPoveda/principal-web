@@ -18,6 +18,10 @@ const ProductTecnology = () => {
     navigate("/tecnology", { replace: true });
   };
 
+  if (!productTecnology){
+    return <div>Producto no existe</div>
+  }
+
   return (
     <div>
       <hr />
