@@ -7,12 +7,12 @@ import  '../styles/aboutus.css';
 const AboutUs = () => {
   //Declaración de variables y constantes
   const [contactUs,setContactUs]=useState(false);
-  const form=document.getElementsByClassName("form");
+  
 
   const {
     register,
     handleSubmit,
-    formState: { errors },
+    //formState: { errors },
   } = useForm();
 
   //Función para enviar el formulario
