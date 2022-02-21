@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/principal-web/static/css/main.dd2243f8.css",
+    "main.js": "/principal-web/static/js/main.2178e89d.js",
+    "index.html": "/principal-web/index.html",
+    "main.dd2243f8.css.map": "/principal-web/static/css/main.dd2243f8.css.map",
+    "main.2178e89d.js.map": "/principal-web/static/js/main.2178e89d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.dd2243f8.css",
+    "static/js/main.2178e89d.js"
+  ]
+}
