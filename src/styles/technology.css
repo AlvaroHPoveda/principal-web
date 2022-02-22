@@ -1,0 +1,36 @@
+.mainTechnologies{
+    text-align: center;
+}
+
+.h1Technologies{
+    text-align: center;
+}
+
+.inputTechnologies{
+   margin: 1rem;
+}
+
+.ulTechnologies{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.ulTechnologies li{
+    width: 100%;
+    border: solid 1px #000; 
+    margin: 1rem;
+    list-style: none;       
+}
+
+.link{
+    text-decoration: none;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.ulTechnologies li img{
+    width: 50%;
+}

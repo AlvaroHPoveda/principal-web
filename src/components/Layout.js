@@ -36,7 +36,7 @@ const Layout = () => {
                 </Link>
               </li>
               <li className="menu-lateral__item">
-                <Link to="/tecnology" className="link">
+                <Link to="/technology" className="link">
                   Tecnología
                 </Link>
               </li>
